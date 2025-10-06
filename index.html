@@ -1,1 +1,26 @@
-!DOCTYPE html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CodeChat</title>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+</head>
+<body>
+  <h1>CodeChat</h1>
+
+  <div>
+    <p>Your Code: <span id="yourCode"></span></p>
+    <input id="friendCode" placeholder="Enter friend's code" />
+    <button onclick="connect()">Connect</button>
+  </div>
+
+  <div id="chat" style="display:none;">
+    <div id="messages" style="border:1px solid #000; height:200px; overflow:auto;"></div>
+    <input id="messageInput" placeholder="Type a message" />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
